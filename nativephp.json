@@ -15,6 +15,7 @@
     ],
     "android": {
         "permissions": [],
+        "min_version": 26,
         "dependencies": {
             "implementation": [
                 "com.google.android.gms:play-services-mlkit-document-scanner:16.0.0"
@@ -22,6 +23,7 @@
         }
     },
     "ios": {
+        "min_version": "13.0",
         "info_plist": {
             "NSCameraUsageDescription": "Camera access is required to scan documents"
         }
