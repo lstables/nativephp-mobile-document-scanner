@@ -1,0 +1,29 @@
+{
+    "namespace": "DocumentScanner",
+    "bridge_functions": [
+        {
+            "name": "DocumentScanner.Scan",
+            "ios": "DocumentScannerFunctions.Scan",
+            "android": "com.lstables.plugins.documentscanner.DocumentScannerFunctions.Scan",
+            "description": "Opens the native document scanner UI and returns scanned pages as JPEG file paths and/or a PDF file path"
+        }
+    ],
+    "events": [
+        "lstables\\NativeDocumentScanner\\Events\\DocumentScanned",
+        "lstables\\NativeDocumentScanner\\Events\\DocumentScanCancelled",
+        "lstables\\NativeDocumentScanner\\Events\\DocumentScanFailed"
+    ],
+    "android": {
+        "permissions": [],
+        "dependencies": {
+            "implementation": [
+                "com.google.android.gms:play-services-mlkit-document-scanner:16.0.0"
+            ]
+        }
+    },
+    "ios": {
+        "info_plist": {
+            "NSCameraUsageDescription": "Camera access is required to scan documents"
+        }
+    }
+}
