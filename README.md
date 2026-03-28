@@ -1,6 +1,6 @@
 # NativePHP Mobile Document Scanner
 
-Native document scanning for NativePHP Mobile apps — powered by **VisionKit** on iOS and **ML Kit** on Android.
+Native document scanning for NativePHP Mobile apps
 
 Scan physical documents from the camera with automatic edge detection, perspective correction, multi-page support, and PDF output. The same scanner engine used by Apple Notes and Google Drive, wrapped in a clean Laravel facade.
 
